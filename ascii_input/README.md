@@ -15,7 +15,7 @@ flag  Z  A  px  py  pz  vx  vy  vz  mass
 
 * eventNumber - index of an event, usually starts at 0
 * multiplicity - number of primary particles, which should match number of lines describing those particles
-* 0.  0. - not used, but has to be in the header
+* “0.  0.” - not used, but has to be in the header
 * flag - 1 if an elementary particle (described with PDG code) or -1 - if a fragment
 * Z - 0 if an elementary particle or charge in case of fragment
 * A - PDG code for a particle or A for a fragment
