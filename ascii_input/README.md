@@ -2,18 +2,18 @@
 
 ## ASCII format
 
-This format is supposed to be used in case if an external event generator provides list of reaction products with particle ID, momentum and start position (vertex).
+This format is supposed to be used in case if an external event generator provides a list of reaction products with particle ID, momentum and start position (vertex).
 
 ### Preparing an input file
 
-The input file is described event-wise with one line of header, followed by lines describing the content, one entry per primary particle. The structure is as following:
+The input file is described event-wise with one line of a header, followed by lines describing the content, one entry per primary particle. The structure is as following:
 
 ~~~
 eventNumber  multiplicity  0.  0.
 flag  Z  A  px  py  pz  vx  vy  vz  mass
 ~~~
 
-* eventNumber - index of an event, usualy starts at 0
+* eventNumber - index of an event, usually starts at 0
 * multiplicity - number of primary particles, which should match number of lines describing those particles
 * 0.  0. - not used, but has to be in the header
 * flag - 1 if an elementary particle (described with PDG code) or -1 - if a fragment
