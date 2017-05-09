@@ -1,6 +1,6 @@
-# Input for the simulation
+# 0. Input for the simulation
 
-## ASCII format
+## 0.1. ASCII format
 
 This format is supposed to be used in case if an external event generator provides a list of reaction products with particle ID, momentum and start position (vertex).
 
@@ -52,7 +52,7 @@ OutFile, ParFile, "Name_Of_the_Input_File", 335566);
 
 The filename should be relative to R3BRoot/input directory.
 
-## Box generator
+## 0.2. Box generator
 
 The so called "box" generator creates particles with uniform distribution in phase-space (4-momentum). It can be used for generic simulations like acceptance studies or efficiency calculations.
 
@@ -81,6 +81,6 @@ TString fGene = "box";
 
 and the particles description can be changed in the file __r3ball.C__ _line 295_.
 
-## Ion generator
+## 0.3. Ion generator
 
 ...
